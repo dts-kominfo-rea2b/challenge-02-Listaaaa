@@ -24,11 +24,11 @@ function lakukanLooping(arrPegawai) {
       Contoh: ["Aisyah Nirmala", "Mansur Faisal", ...]
   */
   
-  let looping = new Array;
+  let hasilLooping = new Array;
   for (let i = 0; i < arrayObjectPegawai.length; i++) {
-    looping[i] = String(`${arrayObjectPegawai[i].namaDepan} ${arrayObjectPegawai[i].namaBelakang}`);
+    hasilLooping[i] = (`${arrayObjectPegawai[i].namaDepan} ${arrayObjectPegawai[i].namaBelakang}`);
   };
-  let hasilLooping = JSON.stringify(looping);
+
  
 
   /*
