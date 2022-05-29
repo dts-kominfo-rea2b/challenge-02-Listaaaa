@@ -26,9 +26,10 @@ function lakukanLooping(arrPegawai) {
   
   let looping = new Array;
   for (let i = 0; i < arrayObjectPegawai.length; i++) {
-    looping[i] = (`${arrayObjectPegawai[i].namaDepan} ${arrayObjectPegawai[i].namaBelakang}`);
+    looping[i] = String(`${arrayObjectPegawai[i].namaDepan} ${arrayObjectPegawai[i].namaBelakang}`);
   };
   let hasilLooping = JSON.stringify(looping);
+ 
 
   /*
     TODO 2: Buatlah sebuah variabel bernama "jumlahPria"
@@ -38,7 +39,6 @@ function lakukanLooping(arrPegawai) {
   for (let i = 0; i < arrayObjectPegawai.length; i++) {
     if (arrayObjectPegawai[i].jenisKelamin === 'M') jumlahPria++;
       };
-      console.log(typeof jumlahPria);
     
   /*
     TODO 3: Buatlah sebuah variabel bernama "jumlahWanita"
