@@ -23,28 +23,30 @@ function lakukanLooping(arrPegawai) {
 
       Contoh: ["Aisyah Nirmala", "Mansur Faisal", ...]
   */
-
-  let hasilLooping = new Array;
-  for (let i = 0; i < arrPegawai.length; i++) {
-    hasilLooping[i] = `${arrPegawai[i].namaDepan} ${arrayObjectPegawai[i].namaBelakang}`;
-  }
+  
+  let looping = new Array;
+  for (let i = 0; i < arrayObjectPegawai.length; i++) {
+    looping[i] = (`${arrayObjectPegawai[i].namaDepan} ${arrayObjectPegawai[i].namaBelakang}`);
+  };
+  let hasilLooping = JSON.stringify(looping);
 
   /*
     TODO 2: Buatlah sebuah variabel bernama "jumlahPria"
       yang berisi jumlah pria dari masing masing pegawai
   */
-  let jumlahPria = 0;
-  for (let i = 0; i < arrPegawai.length; i++) {
-    if (arrPegawai[i].jenisKelamin === 'M') jumlahPria++;
+  let jumlahPria = null;
+  for (let i = 0; i < arrayObjectPegawai.length; i++) {
+    if (arrayObjectPegawai[i].jenisKelamin === 'M') jumlahPria++;
       };
+      console.log(typeof jumlahPria);
     
   /*
     TODO 3: Buatlah sebuah variabel bernama "jumlahWanita"
       yang berisi jumlah wanita dari masing masing pegawai
   */
-  let jumlahWanita = 0;
-    for (let i = 0; i < arrPegawai.length; i++) {
-      if (arrPegawai[i].jenisKelamin === 'F') jumlahWanita++;
+  let jumlahWanita = null;
+    for (let i = 0; i < arrayObjectPegawai.length; i++) {
+      if (arrayObjectPegawai[i].jenisKelamin === 'F') jumlahWanita++;
         };
 
   /*
